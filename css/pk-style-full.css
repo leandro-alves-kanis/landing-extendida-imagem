@@ -1,0 +1,21 @@
+/*
+ * screen css
+ */
+
+.pk-header h1 {font-size: 40px;}
+.pk-header h3 {font-size: 20px; font-weight: 700;}
+
+.pk-header {
+	background-image: url("../imgs/world-bg-high.jpg");
+	background-position: center;
+    background-size: 115%;
+}
+
+.bnt-down{
+    height: 64px;
+}
+
+.btn-quote {padding-left: 60px; padding-right: 60px;}
+.subcall {margin-bottom: 40px;}
+.bnt-down {display: block;}
+header {padding-bottom: 0;}
