@@ -2,6 +2,31 @@
  * common devices css
  */
 
+ @media (min-width: 1200px) {
+  /* line 22, ../sass/global.sass */
+  .bs-slide-lg {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 25, ../sass/global.sass */
+  .bs-slide-md {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 28, ../sass/global.sass */
+  .bs-slide-sm {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 31, ../sass/global.sass */
+  .bs-slide-xs {
+    display: block !important;
+  }
+}
+
 /* typography */
 * {
     text-rendering: optimizelegibility;
@@ -82,7 +107,12 @@ strong{color: #fff568;}
 
 .filler {width: 100%;}
 
-.pk-1 {background-color: #7c2dba;}
+.pk-toons {background-color: #7c2dba;}
 .pk-library {background-color: #059be0;}
 .pk-games {background-color: #fe8069;}
 .pk-best {background-color: #37c887;}
+.slider-desenhos {margin-top: 20px;}
+.slider-desenhos p { color: rgba(255,255,255, 0.7); font-weight: 700;}
+.item p {margin-top: 10px; text-align: center;}
+.item img {width: 100%;}
+
