@@ -19,4 +19,10 @@ body {text-align: center !important;}
     height: 627px;
 	box-shadow: inset 0px 650px 177px -236px rgba(0,0,0,0.7);
 }
+
 .logo-playkids {margin: 0;}
+
+.pk-main h1 {font-size: 30px;}
+.pk-main li p{text-align: left; font-size: 17px; font-weight: 700;}
+.pk-main strong {display: block; font-size: 23px; font-weight: 900;}
+.pk-description {margin-top: 22px;}
