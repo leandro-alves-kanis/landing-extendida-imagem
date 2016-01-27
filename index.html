@@ -16,6 +16,7 @@
     <link rel='stylesheet' media='all and (min-width: 768px) and (max-width: 991px)' href='css/pk-style-tablet.css' />
     <link rel='stylesheet' media='all and (min-width: 992px)' href='css/pk-style-full.css' />
     <link rel='stylesheet' media='all and (min-width:  1200px)' href='css/pk-style-tv.css' />
+    <script src="js/jssor.slider.min.js"></script>
 
     <!-- font -->
     <script src="https://use.typekit.net/bre0idq.js"></script>
@@ -58,6 +59,11 @@
     </script>
     <!-- End ShopBack Code -->
 
+<style>
+
+
+
+</style>
   </head>
   <body>
   <!-- Google Tag Manager -->
@@ -120,40 +126,44 @@
             <li><p><strong>Modo-bebê</strong> não interrompe a exibição</p></li>
           </div>
         </div>
-        <div class="row slider-desenhos">
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Galinha Pintadinha</p>
+
+      <div class="row slider-desenhos">
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden; visibility: hidden;">
+          <!-- Loading Screen -->
+          <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
           </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Disney Mickey</p>
+          <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 809px; height: 150px; overflow: hidden;">
+            <div style="display: none;">
+              <img src="imgs/galinha.png" alt="Desenho">
+              <p>Galinha Pintadinha</p>
+            </div>
+            <div style="display: none;">
+              <img src="imgs/mickey.png" alt="Desenho">
+              <p>Disney Mickey</p>
+            </div>
+            <div style="display: none;">
+              <img src="imgs/esponja.png" alt="Desenho">
+              <p>Bob Esponja</p>
+            </div>
+            <div style="display: none;">
+              <img src="imgs/cailou.png" alt="Desenho">
+              <p style="text-indent: 31px;">Cailou</p>
+            </div>
           </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Bob Esponja</p>
-          </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Cailou</p>
-          </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Turma da Mônica</p>
-          </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Junior on the job</p>
-          </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Hora de Aventura</p>
-          </div>
-          <div class="col-xs-6 col-md-1 item">
-            <img src="imgs/amanda-profile.png" alt="Desenho">
-            <p>Patati e Patatá</p>
-          </div>
+
+          <!-- Arrow Navigator -->
+          <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+          <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+        </div>
       </div>
+<script>
+jssor_1_slider_init();
+</script>
+
+
+</div>
     </section>
 
     <section class="pk-main pk-library" id="main">
@@ -233,6 +243,12 @@
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var options = { $AutoPlay: true };
+            var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+        });
+    </script>
 
   </body>
 </html>
